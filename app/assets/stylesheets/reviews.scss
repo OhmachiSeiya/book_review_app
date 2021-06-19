@@ -621,11 +621,16 @@
   //edit
 
   #edit_review {
-    margin: 100px;
+    margin: 100px auto;
+    width: 60%;
     .field {
       position: relative;
-      width: 27.33%;
       margin-top: 60px;
+      textarea {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 40px;
+      }
       i {
         position: absolute;
         top: 0;
@@ -637,7 +642,7 @@
     }
     .uline {
       position: relative;
-      width: 27.33%;
+      width: 40%;
       input[type='text'], textarea {
         font: 15px/24px sans-serif;
         box-sizing: border-box;
