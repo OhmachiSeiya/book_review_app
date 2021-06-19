@@ -31,7 +31,7 @@
       <figcaption>
         <h1><%= book.title %></h1>
         <span><%= book.author %></span>
-        <p><%= book.published %></p>
+        <p><%= book.published.strftime("%Y年%m月") %> 発行</p>
       </figcaption>
     </figure>
   </li>  

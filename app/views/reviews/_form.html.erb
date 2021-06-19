@@ -29,15 +29,15 @@
   </div>
 
   <div class="field">
-    <%= form.label :portrait, placeholder: "表紙の画像" %>
+    <%= form.label :portrait, "表紙の画像" %>
     <%= form.file_field :portrait %>
   </div>
 
-  <div class="field uline">
+  <div class="field md-form">
     <%= form.text_area :content, placeholder:"内容（MarkDown形式で入力してください）" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit value:"送信する" %>
   </div>
 <% end %>
