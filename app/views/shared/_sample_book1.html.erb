@@ -1,0 +1,38 @@
+<div id="sample_book">
+  <li>
+    <figure class='book'>        
+      <!-- Front -->        
+      <ul class='hardcover_front'>
+        <li>
+          <%= image_tag book.portrait, class:"portrait_img" %>
+          <span class="ribbon bestseller"><%= book.category_id %>科学</span>
+        </li>
+        <li></li>
+      </ul>        
+      <!-- Pages -->        
+      <ul class='page'>
+        <li></li>
+        <li>
+          <%= link_to 'レビュー', book, class:"btn" %>
+        </li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>        
+      <!-- Back -->        
+      <ul class='hardcover_back'>
+        <li></li>
+        <li></li>
+      </ul>
+      <ul class='book_spine'>
+        <li></li>
+        <li></li>
+      </ul>
+      <figcaption>
+        <h1><%= book.title %></h1>
+        <span><%= book.author %></span>
+        <p><%= book.published %></p>
+      </figcaption>
+    </figure>
+  </li>  
+</div>

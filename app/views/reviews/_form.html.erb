@@ -1,0 +1,43 @@
+<%= form_with(model: review) do |form| %>
+  <% if review.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(review.errors.count, "error") %> prohibited this review from being saved:</h2>
+
+      <ul>
+        <% review.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field uline">
+    <%= form.text_field :title, placeholder:"タイトル" %>
+  </div>
+  <div class="field uline">
+    <%= form.text_field :author, placeholder:"著者" %>
+  </div>
+  <div class="field">
+    <%= form.label :published, "発行年月" %>
+    <%= form.date_select :published, start_year: 1900, placeholder:"発行年月" %>
+  </div>
+  <div class="field">
+    <%= form.number_field :category_id, placeholder:"カテゴリ" %>
+  </div>
+  <div class="field">
+    <%= form.number_field :score, placeholder:"点数" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :portrait, placeholder: "表紙の画像" %>
+    <%= form.file_field :portrait %>
+  </div>
+
+  <div class="field uline">
+    <%= form.text_area :content, placeholder:"内容（MarkDown形式で入力してください）" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

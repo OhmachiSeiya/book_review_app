@@ -1,0 +1,17 @@
+<%= render 'shared/header' %>
+
+<div id="main">
+
+  <div class="wrap bg-books">
+    <ul class="books-block">
+      <% @reviews.each do |review| %>
+        <div class="wrap-sample-book">
+          <%= render partial: 'shared/sample_book1', locals: { book: review } %>
+        </div>
+      <% end %>
+    </ul>
+  </div>
+
+</div>
+
+<%= render 'shared/footer' %>

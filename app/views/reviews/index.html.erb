@@ -1,0 +1,43 @@
+<%= render "shared/header" %>
+
+<div id="index_review">
+  <p id="notice"><%= notice %></p>
+
+  <h1>Reviews</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>表紙</th>
+        <th>タイトル</th>
+        <th>発行</th>
+        <th>著者</th>
+        <th>点数</th>
+        <th>カテゴリ</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @reviews.each do |review| %>
+        <tr>
+          <td><%= image_tag review.portrait.variant(resize_to_limit: [100, 100]) %></td>
+          <td><%= review.title %></td>
+          <td><%= review.published.strftime("%Y年%m月") %></td>
+          <td><%= review.author %></td>
+          <td><%= review.score %></td>
+          <td><%= review.category_id %></td>
+          <td><%= link_to '詳細', review %></td>
+          <td><%= link_to '編集', edit_review_path(review) %></td>
+          <td><%= link_to '削除', review, method: :delete, data: { confirm: '削除してもよろしいですか？' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Review', new_review_path %>
+</div>
+
+<%= render "shared/footer" %>

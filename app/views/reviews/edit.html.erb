@@ -1,0 +1,9 @@
+<%= render 'shared/header' %>
+<div id="edit_review">
+
+<%= render 'form', review: @review %>
+
+<%= link_to 'Show', @review %> |
+<%= link_to 'Back', reviews_path %>
+</div>
+<%= render 'shared/footer' %>
