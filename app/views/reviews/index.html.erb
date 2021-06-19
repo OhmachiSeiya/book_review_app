@@ -26,7 +26,7 @@
           <td><%= review.published.strftime("%Y年%m月") %></td>
           <td><%= review.author %></td>
           <td><%= review.score %></td>
-          <td><%= review.category_id %></td>
+          <td><%= review.category.name %></td>
           <td><%= link_to '詳細', review %></td>
           <td><%= link_to '編集', edit_review_path(review) %></td>
           <td><%= link_to '削除', review, method: :delete, data: { confirm: '削除してもよろしいですか？' } %></td>

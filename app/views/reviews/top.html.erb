@@ -6,7 +6,7 @@
     <ul class="books-block">
       <% @reviews.each do |review| %>
         <div class="wrap-sample-book">
-          <%= render partial: 'shared/sample_book1', locals: { book: review } %>
+          <%= render partial: 'shared/sample_book1', locals: { review: review } %>
         </div>
       <% end %>
     </ul>

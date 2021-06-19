@@ -4,8 +4,8 @@
       <!-- Front -->        
       <ul class='hardcover_front'>
         <li>
-          <%= image_tag book.portrait, class:"portrait_img" %>
-          <span class="ribbon bestseller"><%= book.category_id %>科学</span>
+          <%= image_tag review.portrait, class:"portrait_img" %>
+          <span class="ribbon bestseller"><%= review.category.name %></span>
         </li>
         <li></li>
       </ul>        
@@ -13,7 +13,7 @@
       <ul class='page'>
         <li></li>
         <li>
-          <%= link_to 'レビュー', book, class:"btn" %>
+          <%= link_to 'レビュー', review, class:"btn" %>
         </li>
         <li></li>
         <li></li>
@@ -29,9 +29,9 @@
         <li></li>
       </ul>
       <figcaption>
-        <h1><%= book.title %></h1>
-        <span><%= book.author %></span>
-        <p><%= book.published.strftime("%Y年%m月") %> 発行</p>
+        <h1><%= review.title %></h1>
+        <span><%= review.author %></span>
+        <p><%= review.published.strftime("%Y年%m月") %> 発行</p>
       </figcaption>
     </figure>
   </li>  
