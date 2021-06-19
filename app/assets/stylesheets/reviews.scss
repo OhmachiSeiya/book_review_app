@@ -237,6 +237,10 @@
       margin-top: 50px;
       thead{
         border-bottom: 5px solid #eee;
+        tr {
+          background-color: #a0a0a0;
+          color: white;
+        }
       }
       tr:nth-child(even) {
         background-color: #eee
@@ -255,8 +259,8 @@
 
   //show
   #show_review {
-    margin:100px;
-    width: 50%;
+    margin: 100px auto;
+    width: 60%;
     .box{
       display: table-cell;
       vertical-align: middle;
