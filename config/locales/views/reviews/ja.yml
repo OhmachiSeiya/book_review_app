@@ -1,0 +1,22 @@
+ja:
+  reviews:
+    index:
+      title: '書評一覧'
+    show:
+      # 引数の指定もできる。
+      title: '%{review_title}の情報'
+    edit:
+      # view側で t(.title), review_title: @review.title みたいな感じで設定できる
+      title: '%{review_title}の情報を編集'
+
+  flash:
+    new: 作成しました！
+    updated: 更新しました！
+    failed: 失敗しました！
+    destroy: 削除しました！
+    login: ログインしました！
+    logout: ログアウトしました！
+    limited_access: 不正な侵入です！！
+    tag_follow: タグをフォローしました！
+    tag_not_follow: タグをフォローできませんでした。
+    tag_remove_follow: タグのフォローを解除しました！

@@ -1,0 +1,24 @@
+# モデルは全て activerecord 以下に記述する。
+# これにより、User.model_name.human / User.human_attribute_name({attr_name})で使用可能。
+
+ja:
+  activerecord:
+    models:
+      # view側： User.model_name.human => "ユーザ" / t("activerecord.models.user")と同じ
+      review: 書評
+    # model毎に定義したいattributesを記述
+    attributes:
+        review:
+          id: ID
+          # view側： User.human_attribute_name :name => "名前" /　t("activerecord.attributes.user.name")と同じ
+          title: タイトル
+          author: 著者
+          content: 本文
+          published: 発行年月
+          category_id: カテゴリ
+          score: 点数
+          portrait: 表紙
+  # 全てのmodelで共通して使用するattributesを定義
+  attributes:
+    created_at: 作成日
+    updated_at: 更新日
