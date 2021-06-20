@@ -31,7 +31,7 @@
 
   <div class="field">
     <%= form.label :portrait, "表紙の画像" %>
-    <%= form.file_field :portrait %>
+    <%= form.file_field :portrait, accept: 'image/jpeg,image/gif,image/png' %>
   </div>
 
   <div class="field md-form">
