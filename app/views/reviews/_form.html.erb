@@ -26,7 +26,7 @@
     <%= form.collection_select :category_id, Category.all, :id, :name %>
   </div>
   <div class="field">
-    <%= form.number_field :score, placeholder:"点数" %>
+    <%= form.number_field :score, placeholder:"点数（100点満点中）" %>
   </div>
 
   <div class="field">

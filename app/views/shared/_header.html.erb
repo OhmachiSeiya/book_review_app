@@ -3,15 +3,19 @@
     <div class="header-inner">
       <div class="logo">
         <a href="/">
-          本棚
+          <img src="/assets/ロゴ4.png" style="width: 100px;">
         </a>
       </div>
       <nav class="header-nav">
         <div class="header-nav-item">
-          <%= link_to "新規作成", new_review_path, class:"header-button header-post" %>
+          <%= link_to new_review_path, class:"header-button header-post" do %>
+            <i class="fas fa-plus"></i> 新規作成
+          <% end %>
         </div>
         <div class="header-nav-item">
-          <%= link_to "レビューリスト", reviews_path, class:"header-button header-login" %>
+          <%= link_to reviews_path, class:"header-button header-login" do %>
+            <i class="fas fa-list"></i> レビューリスト
+          <% end %>
         </div>
       </nav>
     </div>

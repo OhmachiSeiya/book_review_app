@@ -4,11 +4,89 @@
 
   <div class="wrap bg-books">
     <ul class="books-block">
-      <% @reviews.each do |review| %>
+      <div id="sample_book">
+        <% @reviews.each do |review| %>
+          <div class="wrap-sample-book">
+            <%= render partial: 'shared/sample_book1', locals: { review: review } %>
+          </div>
+        <% end %>
         <div class="wrap-sample-book">
-          <%= render partial: 'shared/sample_book1', locals: { review: review } %>
+          <li>                  
+            <figure class='book'>        
+              <!-- Front -->               
+              <ul class='hardcover_front'>  
+                <li>                        
+                  <img src="/assets/人間の建設.png" class="portrait_img">
+                  <span class="ribbon bestseller">教養</span>  
+                </li>                                                                 
+                <li></li>  
+              </ul>        
+              <!-- Pages -->        
+              <ul class='page'>       
+                <li></li>        
+                <li>
+                  <a class="btn" href="">サンプル</a>
+                </li>                                               
+                <li></li>  
+                <li></li>  
+                <li></li>  
+              </ul>        
+              <!-- Back -->        
+              <ul class='hardcover_back'>  
+                <li></li>                  
+                <li></li>  
+              </ul>        
+              <ul class='book_spine'>  
+                <li></li>              
+                <li></li>  
+              </ul>        
+              <figcaption>  
+                <h1>人間の建設</h1>  
+                <span>岡潔・小林秀雄</span>  
+                <p>1980年10月 発行</p>  
+              </figcaption>                                               
+            </figure>        
+          </li>
         </div>
-      <% end %>
+        <div class="wrap-sample-book">
+          <li>                  
+            <figure class='book'>        
+              <!-- Front -->               
+              <ul class='hardcover_front'>  
+                <li>                        
+                  <img src="/assets/人工衛星をつくる.png" class="portrait_img">
+                  <span class="ribbon bestseller">科学</span>  
+                </li>                                                                 
+                <li></li>  
+              </ul>        
+              <!-- Pages -->        
+              <ul class='page'>       
+                <li></li>        
+                <li>
+                  <a class="btn" href="">サンプル</a>
+                </li>                                               
+                <li></li>  
+                <li></li>  
+                <li></li>  
+              </ul>        
+              <!-- Back -->        
+              <ul class='hardcover_back'>  
+                <li></li>                  
+                <li></li>  
+              </ul>        
+              <ul class='book_spine'>  
+                <li></li>              
+                <li></li>  
+              </ul>        
+              <figcaption>  
+                <h1>人工衛星をつくる</h1>
+                <span>宮崎 康行</span>  
+                <p>1980年10月 発行</p>  
+              </figcaption>                                               
+            </figure>        
+          </li>
+        </div>
+      </div>
     </ul>
   </div>
 

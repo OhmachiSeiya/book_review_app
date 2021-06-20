@@ -1,38 +1,36 @@
-<div id="sample_book">
-  <li>
-    <figure class='book'>        
-      <!-- Front -->        
-      <ul class='hardcover_front'>
-        <li>
-          <%= image_tag review.portrait, class:"portrait_img" %>
-          <span class="ribbon bestseller"><%= review.category.name %></span>
-        </li>
-        <li></li>
-      </ul>        
-      <!-- Pages -->        
-      <ul class='page'>
-        <li></li>
-        <li>
-          <%= link_to 'レビュー', review, class:"btn" %>
-        </li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>        
-      <!-- Back -->        
-      <ul class='hardcover_back'>
-        <li></li>
-        <li></li>
-      </ul>
-      <ul class='book_spine'>
-        <li></li>
-        <li></li>
-      </ul>
-      <figcaption>
-        <h1><%= review.title %></h1>
-        <span><%= review.author %></span>
-        <p><%= review.published.strftime("%Y年%m月") %> 発行</p>
-      </figcaption>
-    </figure>
-  </li>  
-</div>
+<li>
+  <figure class='book'>        
+    <!-- Front -->        
+    <ul class='hardcover_front'>
+      <li>
+        <%= image_tag review.portrait, class:"portrait_img" %>
+        <span class="ribbon bestseller"><%= review.category.name %></span>
+      </li>
+      <li></li>
+    </ul>        
+    <!-- Pages -->        
+    <ul class='page'>
+      <li></li>
+      <li>
+        <%= link_to '書評を見る', review, class:"btn" %>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>        
+    <!-- Back -->        
+    <ul class='hardcover_back'>
+      <li></li>
+      <li></li>
+    </ul>
+    <ul class='book_spine'>
+      <li></li>
+      <li></li>
+    </ul>
+    <figcaption>
+      <h1><%= review.title %></h1>
+      <span><%= review.author %></span>
+      <p><%= review.published.strftime("%Y年%m月") %> 発行</p>
+    </figcaption>
+  </figure>
+</li>  
