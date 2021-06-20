@@ -6,6 +6,14 @@ class ReviewsController < ApplicationController
     @categories = Category.all.order(created_at: "DESC")
   end
 
+  def show_sample1
+    @content = "# 概要\r\n岡潔と小林秀雄の対談\r\n学問や芸術について\r\n\r\n## 目次\r\n- 学問をたのしむ\r\n- 無明ということ\r\n- 国を象徴する酒\r\n- 数学も個性を失う\r\n- 科学的知性の限界\r\n- 人間と人生への無知\r\n- 破壊だけの自然科学\r\n- アインシュタインという人間\r\n- 美的感動について\r\n- 人間の生き方\r\n- 無明の達人\r\n- 「一」という観念\r\n- 数学と詩の相似\r\n- はじめに言葉\r\n- 近代数学と情緒\r\n- 記憶がよみがえる\r\n- 批評の極意\r\n- 素読教育の必要\r\n\r\n### 感想\r\n二人の天才による世界の見方が参考になった"
+  end
+
+  def show_sample2
+    @content = "# 概要\r\n人工衛星開発の第一歩。\r\n人工衛星に関する技術と心の両方を学ぶ本。\r\n\r\n## 目次\r\n- 超小型衛星ってどんなもの？\r\n- 製作をはじめる前に\r\n- 環境をととのえよう\r\n- 人工衛星の設計・開発の基本要素\r\n- つくってから、打ち上げるまで\r\n-　打ち上げ、そして運用へ\r\n-　さあ、何から始めよう？\r\n\r\n### 感想\r\n宮崎氏の人間性の豊かさを垣間見ることができる素晴らしい本だと感じた"
+  end
+
   # GET /reviews or /reviews.json
   def index
     @reviews = Review.all.order(created_at: "DESC")

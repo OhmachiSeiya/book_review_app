@@ -1,0 +1,50 @@
+<%= render "shared/header" %>
+<div id="show_review">
+  <p id="notice"><%= notice %></p>
+
+  <div class="boxContainer">
+    <div class="box">
+      <p>
+        <%= image_tag "人間の建設.png" %>
+      </p>
+    </div>
+
+
+    <div class="box">
+      <p>
+      <strong>タイトル:</strong>
+      人間の建設
+      </p>
+
+      <p>
+      <strong>発行:</strong>
+      1965年
+      </p>
+
+      <p>
+      <strong>著者:</strong>
+      岡潔・小林秀雄
+      </p>
+
+      <p>
+      <strong>カテゴリ:</strong>
+      教養
+      </p>
+
+      <p>
+      <strong>点数:</strong>
+      95
+      </p>
+    </div>
+  </div>
+
+  <div class="md-content">
+    <div class="md-inner">
+      <%= markdown(@content).html_safe %>
+    </div>
+  </div>
+
+  <%= link_to '一覧へ戻る', reviews_path %>
+</div>
+<%= render "shared/footer" %>
+
