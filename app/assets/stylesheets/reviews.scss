@@ -46,9 +46,9 @@
       font-size: 22px;
     }
     .logo-text {
+      color: #000;
       font-size: 28px;
-      color: #8b77a0;
-      border: solid 4px #8b77a0;
+      border: solid 4px #000;
       padding: 26px 10px;
     }
 
@@ -63,7 +63,7 @@
     }
 
     .header-login {
-      color: #7b6d9c;
+      color: #000;
       font-weight: bold;
       display: inline-block;
       transition: .3s;
@@ -72,14 +72,13 @@
     }
 
     .header-login:hover {
-      color: #8f7fb3;
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
 
     .header-post {
       font-weight: bold;
-      color: #7b6d9c;
+      color: #000;
       border: 1px solid #ccc;
       border-radius: 4px;
       background: #f1e767;
@@ -242,7 +241,6 @@
     }
     h1 {
       padding-left: 100px;
-      color: #7b6d9c;
     }
     thead, tbody, tfoot, tr, td, th {
       padding: 20px;
@@ -580,9 +578,6 @@
 
   //new
   #new_review {
-    h1 {
-      color:#7b6d9c;
-    }
     margin: 100px auto;
     width: 60%;
     .field {
