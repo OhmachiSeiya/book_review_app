@@ -583,6 +583,37 @@
   #new_review {
     margin: 100px auto;
     width: 60%;
+    .radio-inline {
+      display: inline-flex;
+      label {
+        color: #a9a9a9;
+        padding: 14px;
+        border: solid 1px #a9a9a9;
+        margin-right: 8px;
+        width: 68px;
+        text-align: center;
+      }
+      input[type='radio'] {
+        display: none;
+      }
+      input[type="radio"]:checked + label {
+        background: #ececec;
+        color: #333; 
+        display: inline-block;
+      }
+    }
+    .label-above {
+      color: #333;
+      border: none;
+      margin-left:0;
+      padding:14px 0 0 0;
+      text-align: left;
+      margin-bottom: 10px;
+      &::after {
+        content: "\000A";
+        white-space: wrap;
+      }
+    }
     .field {
       position: relative;
       margin-top: 60px;
