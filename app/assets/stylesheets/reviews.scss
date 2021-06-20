@@ -242,6 +242,7 @@
     }
     h1 {
       padding-left: 100px;
+      color: #7b6d9c;
     }
     thead, tbody, tfoot, tr, td, th {
       padding: 20px;
@@ -579,6 +580,9 @@
 
   //new
   #new_review {
+    h1 {
+      color:#7b6d9c;
+    }
     margin: 100px auto;
     width: 60%;
     .field {

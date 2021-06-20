@@ -21,7 +21,7 @@
     <tbody>
       <% @reviews.each do |review| %>
         <tr>
-          <td><%= image_tag review.portrait.variant(resize_to_limit: [100, 100]) %></td>
+          <td><%= image_tag review.portrait, width: '80px', height: '120px' %></td>
           <td><%= review.title %></td>
           <td><%= review.published.strftime("%Y年%m月") %></td>
           <td><%= review.author %></td>
