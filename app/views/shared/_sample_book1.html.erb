@@ -28,8 +28,8 @@
       <li></li>
     </ul>
     <figcaption>
-      <h1><%= review.title %></h1>
-      <span><%= review.author %></span>
+      <h1><%= review.title.truncate(16) %></h1>
+      <span><%= review.author.truncate(16) %></span>
       <p><%= review.published.strftime("%Y年%m月") %> 発行</p>
     </figcaption>
   </figure>
