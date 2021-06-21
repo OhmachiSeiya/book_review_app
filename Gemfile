@@ -34,6 +34,17 @@ gem 'coderay'
 
 gem 'rails-i18n'
 
+# 管理画面用gem
+# 管理者ユーザーを作る
+gem 'devise'
+# 管理画面用
+gem 'activeadmin'
+# リッチエディタのため
+gem 'ckeditor', git: "https://github.com/galetahub/ckeditor", branch: "master"
+gem 'active_admin_flat_skin'
+# 画像のリサイズなどを扱うため
+gem "mini_magick"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
