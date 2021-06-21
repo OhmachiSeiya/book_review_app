@@ -19,6 +19,9 @@ ja:
           score: 点数
           portrait: 表紙
           category: カテゴリ
+        category:
+          id: ID
+          name: 名前
   # 全てのmodelで共通して使用するattributesを定義
   attributes:
     created_at: 作成日
